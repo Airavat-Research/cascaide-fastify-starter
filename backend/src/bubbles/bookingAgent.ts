@@ -6,6 +6,7 @@ import type {
   PostResult,
   CascadeController,
   Updates,
+  ServerNodeDefinition,
   Spawns,
 } from '@cascaide-ts/core';
 import { callLLM, CanonicalToolCall,

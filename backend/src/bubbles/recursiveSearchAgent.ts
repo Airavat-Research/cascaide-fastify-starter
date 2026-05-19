@@ -124,7 +124,7 @@ toProviderHistory
             } as Spawns
           : undefined,
 
-      };
+      } as PostResult ;
 
   }
   };
@@ -214,8 +214,8 @@ export const recursiveSearchToolNode: ServerNodeDefinition<SearchToolPrepOut, Se
       });
     }
     
-  
 
+    // ── 3. Delegation execution ───────────────────────────────────────────
     const delegationResultsPromise = Promise.all(
       delegationTasks.map(async ({ toolCall, subCascadeId }): Promise<{ toolCall: CanonicalToolCall; toolResult: CanonicalMessage }> => {
   

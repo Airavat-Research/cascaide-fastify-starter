@@ -34,6 +34,7 @@ buildToolResultMessage
   
     async prep(cascadeContext: WorkflowContext, initialContext: any): Promise<hotelSupervisorPrepOut> {
         const cascadeId = initialContext.cascadeId;
+
         const dataArray = cascadeContext[cascadeId];
         const canonicalHistory = dataArray.flatMap((item: any) => item.history || []);
 
